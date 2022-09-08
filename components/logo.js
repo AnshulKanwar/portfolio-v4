@@ -7,7 +7,7 @@ function Logo() {
 
   useEffect(() => setMounted(true), []);
 
-  const color = theme === "light" ? "#2b3853" : "#ccd0d9";
+  const color = theme === "light" ? "#212B3F" : "#ccd0d9";
 
   if (!mounted) {
     return null;

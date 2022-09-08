@@ -11,10 +11,10 @@ const Sidebar = () => {
       </div>
       <nav className="mb-10">
         <ul className="text-xl font-light text-right flex flex-col gap-6 text-[#96A0B3]">
-          <li className="transition hover:text-[#2B3853] dark:hover:text-[#CCD0D9] cursor-pointer">
+          <li className="transition hover:text-[#212B3F] dark:hover:text-[#CCD0D9] cursor-pointer">
             Home
           </li>
-          <li className="transition hover:text-[#2B3853] dark:hover:text-[#CCD0D9] cursor-pointer">
+          <li className="transition hover:text-[#212B3F] dark:hover:text-[#CCD0D9] cursor-pointer">
             <Link href="/blog">Blog</Link>
           </li>
         </ul>

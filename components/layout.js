@@ -1,6 +1,6 @@
 const Layout = ({ children }) => {
   return (
-    <div className="text-[#2B3853] bg-[#CCD0D9] dark:text-[#CCD0D9] dark:bg-[#2B3853]">
+    <div className="min-h-screen text-[#212B3F] bg-[#CCD0D9] dark:text-[#CCD0D9] dark:bg-[#212B3F]">
       {children}
     </div>
   );

@@ -7,7 +7,7 @@ import { getAllPosts } from "../../lib/posts";
 const Blog = ({ allPostsData }) => {
   return (
     <Layout>
-      <div className="min-h-screen pt-20 max-w-2xl mx-auto px-12">
+      <div className="pt-20 max-w-2xl mx-auto px-12">
         <div className="mb-5 hover:underline cursor-pointer">
           <Link href="/">
             <div className="flex gap-1 items-center text-xs font-bold">
