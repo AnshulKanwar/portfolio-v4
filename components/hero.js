@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="grid place-items-center">
+    <div className="h-full grid place-items-center">
       <main className="text-2xl">
         Hi<br />
         I am <span className="font-bold">Anshul Kanwar</span><br />
