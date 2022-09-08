@@ -1,10 +1,19 @@
 import { parseISO, format } from "date-fns";
 import Link from "next/link";
+import { TbArrowLeft } from "react-icons/tb";
 import { getAllPosts } from "../../lib/posts";
 
 const Blog = ({ allPostsData }) => {
   return (
     <div className="mt-20 max-w-2xl mx-auto px-12">
+      <div className="mb-5 hover:underline cursor-pointer">
+        <Link href="/">
+          <div className="flex gap-1 items-center text-xs font-bold">
+            <TbArrowLeft className="text-2xl" />
+            <span>Go back Home</span>
+          </div>
+        </Link>
+      </div>
       <h1 className="text-8xl font-thin mb-20">Blog</h1>
       <div>
         <ul className="flex flex-col gap-10">
