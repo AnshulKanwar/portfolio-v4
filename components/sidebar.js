@@ -10,7 +10,7 @@ const Sidebar = () => {
         <Logo />
       </div>
       <nav className="mb-10">
-        <ul className="text-xl font-light text-right flex flex-col gap-6 text-[#96A0B3]">
+        <ul className="text-xl font-light text-right flex flex-col gap-6 text-[#96A0B3] dark:text-[#3D4F74]">
           <li className="transition hover:text-[#212B3F] dark:hover:text-[#CCD0D9] cursor-pointer">
             Home
           </li>
