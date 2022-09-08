@@ -15,7 +15,7 @@ export default function Post({ post }) {
           </time>
         </span>
       </div>
-      <div className="prose mt-10">
+      <div className="prose dark:prose-invert prose-slate mt-10">
         <MDXRemote {...post.content} components={components} />
       </div>
     </div>
