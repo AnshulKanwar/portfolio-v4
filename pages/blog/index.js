@@ -1,7 +1,8 @@
-import { parseISO, format } from "date-fns";
 import Link from "next/link";
+import { parseISO, format } from "date-fns";
 import { TbArrowLeft } from "react-icons/tb";
 import Layout from "../../components/layout";
+import ThemeToggle from "../../components/themeToggle"
 import { getAllPosts } from "../../lib/posts";
 
 const Blog = ({ allPostsData }) => {
@@ -39,6 +40,9 @@ const Blog = ({ allPostsData }) => {
             ))}
           </ul>
         </div>
+      </div>
+      <div className="fixed bottom-20 right-20">
+        <ThemeToggle />
       </div>
     </Layout>
   );

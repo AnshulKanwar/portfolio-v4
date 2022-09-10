@@ -1,6 +1,7 @@
 import { parseISO, format } from "date-fns";
 import { MDXRemote } from "next-mdx-remote";
 import Layout from "../../components/layout";
+import ThemeToggle from "../../components/themeToggle";
 import { getPost, getAllPostsIds } from "../../lib/posts";
 
 const components = {};
@@ -8,7 +9,7 @@ const components = {};
 export default function Post({ post }) {
   return (
     <Layout>
-      <div className="pt-36 max-w-[60ch] mx-auto">
+      <div className="py-36 max-w-[60ch] mx-auto">
         <div className="border-b border-[#96A0B3] pb-4">
           <h1 className="text-6xl mb-8">{post.title}</h1>
           <span className="font-light text-[#96A0B3]">
@@ -20,6 +21,9 @@ export default function Post({ post }) {
         <div className="prose dark:prose-invert prose-slate mt-10">
           <MDXRemote {...post.content} components={components} />
         </div>
+      </div>
+      <div className="fixed bottom-20 right-20">
+        <ThemeToggle />
       </div>
     </Layout>
   );
