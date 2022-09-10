@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <ul className="flex justify-between text-2xl text-[#96A0B3] dark:text-[#3D4F74]">
-        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] tarnsition">
+        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] transition">
           <a
             href="mailto:me@anshulkanwar.tech"
             target="_blank"
@@ -18,7 +18,7 @@ const Contact = () => {
             <TbMail />
           </a>
         </li>
-        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] tarnsition">
+        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] transition">
           <a
             href="https://github.com/AnshulKanwar"
             target="_blank"
@@ -27,7 +27,7 @@ const Contact = () => {
             <TbBrandGithub />
           </a>
         </li>
-        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] tarnsition">
+        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] transition">
           <a
             href="https://www.linkedin.com/in/anshul-kanwar/"
             target="_blank"
@@ -36,7 +36,7 @@ const Contact = () => {
             <TbBrandLinkedin />
           </a>
         </li>
-        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] tarnsition">
+        <li className="hover:text-[#212B3F] dark:hover:text-[#CCD0D9] transition">
           <a
             href="https://www.instagram.com/_0xanshul/"
             target="_blank"
