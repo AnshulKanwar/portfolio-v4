@@ -1,5 +1,7 @@
 import { parseISO, format } from "date-fns";
 import { MDXRemote } from "next-mdx-remote";
+import Link from "next/link";
+import { TbArrowLeft } from "react-icons/tb";
 import Layout from "../../components/layout";
 import ThemeToggle from "../../components/themeToggle";
 import { getPost, getAllPostsIds } from "../../lib/posts";
@@ -10,6 +12,14 @@ export default function Post({ post }) {
   return (
     <Layout>
       <div className="py-36 max-w-[60ch] mx-auto">
+        <div className="mb-5 hover:underline cursor-pointer">
+          <Link href="/blog">
+            <div className="flex gap-1 items-center text-xs font-bold">
+              <TbArrowLeft className="text-2xl" />
+              <span>Go back</span>
+            </div>
+          </Link>
+        </div>
         <div className="border-b border-[#96A0B3] pb-4">
           <h1 className="text-6xl mb-8">{post.title}</h1>
           <span className="font-light text-[#96A0B3]">
