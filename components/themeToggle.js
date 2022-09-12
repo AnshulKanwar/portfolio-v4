@@ -13,7 +13,7 @@ const ThemeToggle = () => {
   }
 
   return (
-    <div className="w-fit text-2xl transition text-[#96A0B3] hover:text-[#212B3F] dark:text-[#3D4F74] dark:hover:text-[#CCD0D9]">
+    <div className="w-fit text-2xl transition text-[#96A0B3] hover:text-[#212B3F] dark:text-[#3D4F74] dark:hover:text-[#D9DCE3]">
       {theme === "light" ? (
         <button onClick={() => setTheme('dark')}>
           <TbSun />
