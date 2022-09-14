@@ -5,12 +5,14 @@ import { TbArrowLeft } from "react-icons/tb";
 import Layout from "../../components/layout";
 import ThemeToggle from "../../components/themeToggle";
 import { getPost, getAllPostsIds } from "../../lib/posts";
-import Alert from "../../components/blog/alert"
+import Alert from "../../components/blog/alert";
 import A from "../../components/blog/a";
+import Code from "../../components/blog/code";
 
 const components = {
   Alert,
-  a: A
+  a: A,
+  pre: Code,
 };
 
 export default function Post({ post }) {
