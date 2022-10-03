@@ -17,6 +17,9 @@ const Sidebar = () => {
           <li className="transition hover:text-[#212B3F] dark:hover:text-[#D9DCE3] cursor-pointer">
             <Link href="/blog">Blog</Link>
           </li>
+          <li className="transition hover:text-[#212B3F] dark:hover:text-[#D9DCE3] cursor-pointer">
+            <a href="https://notes.anshulkanwar.tech/">Notes</a>
+          </li>
         </ul>
       </nav>
       <ThemeToggle />
