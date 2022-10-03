@@ -1,0 +1,59 @@
+---
+title: "Creating a simple Hello world app with react"
+date: "2022-09-14"
+excerpt: "In this short blog post we will create a simple app with react"
+---
+
+Hi there 👋
+
+Today we will create a simple app with react. This short tutorial is perfect for begineers.
+
+<Alert type="important">
+  1. You should have atleast npm version 5.2+ installed
+  2. You only need to know javascript for this tutorial
+</Alert>
+
+First open your terminal and run the following command to setup a basic app
+
+```shell
+npx create-react-app hello-react
+```
+
+Next cd into the newly created directory hello-react using
+
+```shell
+cd hello-react
+```
+
+<Alert type="info">
+  You can optionally open the directory in VSCode and continue from inside VSCode
+</Alert>
+
+[create-react-app](https://create-react-app.dev) creates a sets up a simple application for us. You can run the application using
+
+```shell
+npm start
+```
+
+Your application should now be live at [http://localhost:3000](http://localhost:3000)
+
+now replace the content inside `src/App.js` with this
+
+```javascript
+import './App.css';
+
+function App() {
+  return (
+      <div className="App">
+        👋 Hello World!
+    </div>
+  );
+}
+
+export default App;
+```
+Move over to your browser window and this is what you get
+
+![http://localhost:3000](/blog/hello-world.png)
+
+And this is how you create a simple Hello World app with react.
