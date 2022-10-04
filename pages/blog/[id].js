@@ -8,17 +8,19 @@ import { getPost, getAllPostsIds } from "../../lib/posts";
 import Alert from "../../components/blog/alert";
 import A from "../../components/blog/a";
 import Code from "../../components/blog/code";
+import BlogImage from "../../components/blog/image";
 
 const components = {
   Alert,
   a: A,
+  img: BlogImage,
   pre: Code,
 };
 
 export default function Post({ post }) {
   return (
     <Layout>
-      <div className="py-36 max-w-[60ch] mx-auto">
+      <div className="py-36 px-10 max-w-[70ch] mx-auto">
         <div className="mb-5 hover:underline cursor-pointer">
           <Link href="/blog">
             <div className="flex gap-1 items-center text-xs font-bold">
